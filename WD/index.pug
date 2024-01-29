@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+    head
+        include includes/meta
+        //- link style
+        include includes/styles
+        title WD
+    body 
+        header.header.header-bg 
+            .header__container
+                .header__logo 
+                    a(href="" aria-label="logo")
+                        img(src="images/logo.png", alt="logo")
+                nav.header__menu.menu 
+                    ul.menu__list 
+                        include includes/menu
+            .header__body 
+                .header__body-img
+                    img(src="images/computer.png", alt="computer")
+                .header__body-content
+                    h1.header__title Дизайн и верстка
+                    p.header__desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    button.button.btn НАПИСАТЬ МНЕ

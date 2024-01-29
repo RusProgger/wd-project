@@ -1,0 +1,18 @@
+.header {
+    // header bg
+    &-bg {
+        background-color: $grayBg;
+    }
+
+    // container
+    &__container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 60px 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
