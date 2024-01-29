@@ -1,6 +1,9 @@
+@import "../fonts/fonts";
 @import "var";
 @import "normalize";
 @import "reset";
+@import "container";
+@import "components/button";
 
 // default style reset
 
@@ -31,7 +34,13 @@ img {
 // components
 
 // header 
-
 @import "components/header";
 
 @import "components/menu";
+
+
+
+
+
+
+
