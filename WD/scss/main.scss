@@ -4,6 +4,9 @@
 @import "reset";
 @import "container";
 @import "components/button";
+// layout
+@import "../scss/layout/header";
+@import "../scss/layout/about";
 
 // default style reset
 
@@ -34,7 +37,8 @@ img {
 // components
 
 // header 
-@import "components/header";
+@import "../scss/layout/header";
+@import "../scss/layout/projects";
 
 @import "components/menu";
 
