@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mouse-parallax {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mouse-parallax__background {
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    height: 110%;
+    background: url(../images/404.jpg) no-repeat center center /cover;
+}
+
+
+.mouse-parallax__content {
+    font-size: 265px;
+    color: #eaeef3;
+    text-shadow: 4px 7px 6px #2e2e2e;
+}
