@@ -3,6 +3,16 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name='apple-mobile-web-app-capable' content='yes')
+        meta(name='theme-color' content='#ab1b79')
+        link(rel='apple-touch-icon' sizes='16x16' href='img/icons/stalker-icon-16.jpg')
+        link(rel='apple-touch-icon' sizes='32x32' href='img/icons/stalker-icon-32.jpg')
+        link(rel='apple-touch-icon' sizes='64x64' href='img/icons/stalker-icon-64.jpg')
+        link(rel='apple-touch-icon' sizes='128x128' href='img/icons/stalker-icon-128.jpg')
+        link(rel='icon' type='image/png' href='img/icons/stalker-icon-16.jpg' sizes='16x16')
+        link(rel='icon' type='image/png' href='img/icons/stalker-icon-32.jpg' sizes='32x32')
+        link(rel='icon' type='image/png' href='img/icons/stalker-icon-64.jpg' sizes='64x64')
+        link(rel='icon' type='image/png' href='img/icons/stalker-icon-128.jpg' sizes='128x128')
         link(rel="stylesheet", href="css/styles.css")
         title S.T.A.L.K.E.R - W.I.N.T.E.R -mod
     body
@@ -14,9 +24,15 @@ html(lang="en")
         main.main 
             .main__title Разработка игры:
 
+            .main__body-wrapper
+                .main__body-cards 
+                    .main__body__card
+                        h3.main__body__title 
+                            img(src="img/", alt="")
+
             //- block service
-            .main__body.main__body-bg
-                .main__body-text Модификация меняла холодные проливные дожди на снегопады, которые периодически осыпали кроны облетевших деревьев, крыши покосившихся домиков и старые асфальтовые дорожки мягкими белыми хлопьями снега. Серые пустоши, усеянные пожухлыми травами и земля, покрытая мертвой листвой, превращались в белоснежные поблескивающие от лучей тусклого зимнего солнца просторы. Снежные шапки на деревьях, скрип свежего чистого снега под ногами одинокого бродяги, треск костра, у которого греется компания старателей, переодетых в зимнюю одежду.
+            //- .main__body.main__body-bg
+            //-     .main__body-text Модификация меняла холодные проливные дожди на снегопады, которые периодически осыпали кроны облетевших деревьев, крыши покосившихся домиков и старые асфальтовые дорожки мягкими белыми хлопьями снега. Серые пустоши, усеянные пожухлыми травами и земля, покрытая мертвой листвой, превращались в белоснежные поблескивающие от лучей тусклого зимнего солнца просторы. Снежные шапки на деревьях, скрип свежего чистого снега под ногами одинокого бродяги, треск костра, у которого греется компания старателей, переодетых в зимнюю одежду.
 
         footer.footer 
             p.footer__text 
