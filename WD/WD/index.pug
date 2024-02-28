@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        include includes/meta
+        //- link style
+        include includes/styles
+        title WD
+    body 
+        header.header.header-bg 
+            .header__container
+                .header__logo 
+                    a(href="" aria-label="logo")
+                        img(src="images/logo.png", alt="logo")
+                nav.header__menu.menu 
+                    ul.menu__list 
+                        include includes/menu
+            .header__body 
+                .header__body-img
+                    img(src="images/computer.png", alt="computer")
+                .header__body-content
+                    h1.header__body-content-title.title Дизайн и верстка
+                    p.header__body-content-desc.desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    .header__body-button 
+                        button.button.btn.button-mt НАПИСАТЬ МНЕ
+        main.main 
+            section.main__about.about
+                h2.main__about-title.title Обо мне
+                p.main__about-desc.desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            
+            //- section projects
+            section.main__projects.main__projects-bg
+                .container
+                    .main__projects-img 
+                        img(src="images/projects/projects.svg", alt="projects")
+                        img(src="images/projects/projects.svg", alt="projects")
+                        img(src="images/projects/projects.svg", alt="projects")
+                        img(src="images/projects/projects.svg", alt="projects")
+                        img(src="images/projects/projects.svg", alt="projects")
+                        img(src="images/projects/projects.svg", alt="projects")
+
+            //- section skills
+
+            section.main__skills 
+                .container 
+                    .main__skills-body
+                        .main__skills-body-cards 
+                            h2.main__skills-body-title.title Мои навыки
+                            .main__skills-body-progress-text Adobe Photoshop
+                            .main__skills-body-progress
+                                progress(value='70' max="100") 70%
+                            .main__skills-body-progress-text Adobe AfterEffect
+                            .main__skills-body-progress
+                                progress(value='70' max="100") 70%
+                            .main__skills-body-progress-text Adobe Premiere
+                            .main__skills-body-progress
+                                progress(value='70' max="100") 70%
+                        .main__skills-body-img 
+                            img(src="images/author/author.jpg", alt="author")
+
+
