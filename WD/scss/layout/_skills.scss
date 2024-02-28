@@ -1,0 +1,46 @@
+.main__skills {
+    padding: 101px 0;
+
+    &-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        // border: 1px solid red;
+
+        &-cards {
+            flex-grow: 1;
+        }
+
+        &-img {
+            img {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 500px;
+            padding-left: 25px;
+            }
+            
+        }
+    }
+
+    &-body-title {
+        @include nameText;
+        font-size: clamp(1rem, -0.4545rem + 7.2727vw, 2rem);
+        padding: 15px 0 15px 0;
+    }
+
+    &-body-progress {
+        progress {
+            width: 100%;
+            accent-color: #34547A;
+        }
+
+        &-text {
+            padding: 15px 0;
+            @include nameTextDesc;
+        }
+
+        
+    }
+}

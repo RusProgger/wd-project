@@ -34,13 +34,16 @@ img {
     object-fit: cover;
 }
 
+
 // components
 
 // header 
 @import "../scss/layout/header";
 @import "../scss/layout/projects";
+@import "../scss/layout/skills";
 
 @import "components/menu";
+
 
 
 

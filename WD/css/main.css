@@ -564,6 +564,43 @@ img {
   margin-right: 50px;
 }
 
+.main__skills {
+  padding: 101px 0;
+}
+.main__skills-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main__skills-body-cards {
+  flex-grow: 1;
+}
+.main__skills-body-img img {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  padding-left: 25px;
+}
+.main__skills-body-title {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  color: #000000;
+  font-size: clamp(1rem, -0.4545rem + 7.2727vw, 2rem);
+  padding: 15px 0 15px 0;
+}
+.main__skills-body-progress progress {
+  width: 100%;
+  accent-color: #34547A;
+}
+.main__skills-body-progress-text {
+  padding: 15px 0;
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  color: #727272;
+}
+
 .menu__list {
   display: flex;
   flex-wrap: wrap;
