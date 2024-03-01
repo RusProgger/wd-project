@@ -7,6 +7,8 @@
 // layout
 @import "../scss/layout/header";
 @import "../scss/layout/about";
+@import "../scss/layout/work";
+@import "../scss/layout/cards";
 
 // default style reset
 
@@ -32,6 +34,10 @@ img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.background {
+    background-color: $grayBg;
 }
 
 

@@ -1,0 +1,29 @@
+.main__work {
+    &-body {
+        padding: 120px 10px 70px 10px;
+        max-width: 475px;
+        margin: auto
+    }
+    
+
+    &-title {
+        @include nameText;
+        text-align: center;
+        font-size: clamp(1rem, -0.4545rem + 7.2727vw, 2rem);
+        margin-bottom: 40px;
+    }
+
+    &-desc {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1rem;
+
+        @include nameTextDesc;
+    }
+}
+
+video {
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+}

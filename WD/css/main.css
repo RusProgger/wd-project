@@ -401,9 +401,6 @@ table {
   font-size: 0.875rem;
 }
 
-.header-bg {
-  background-color: #EEEFF1;
-}
 .header__container {
   max-width: 1100px;
   margin: auto;
@@ -472,6 +469,52 @@ table {
   color: #727272;
 }
 
+.main__work-body {
+  padding: 120px 10px 70px 10px;
+  max-width: 475px;
+  margin: auto;
+}
+.main__work-title {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  font-size: clamp(1rem, -0.4545rem + 7.2727vw, 2rem);
+  margin-bottom: 40px;
+}
+.main__work-desc {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  color: #727272;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.main__cards-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 72px;
+}
+.main__cards-body-img {
+  width: 25%;
+  font-size: 0;
+}
+.main__cards-microsoft {
+  padding-bottom: 100px;
+  margin: auto;
+  width: 100%;
+}
+.main__cards-microsoft a:not(:first-child) {
+  margin-left: 20px;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -497,9 +540,10 @@ img {
      object-fit: cover;
 }
 
-.header-bg {
+.background {
   background-color: #EEEFF1;
 }
+
 .header__container {
   max-width: 1100px;
   margin: auto;
