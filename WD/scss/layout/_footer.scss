@@ -1,0 +1,23 @@
+.footer {
+    background-color: $footer;
+    &__body {
+        min-height: 151px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__text a {
+        @include nameText;
+        color: #ffffff;
+        font-size: 21px;
+        text-decoration: none;
+        display: block;
+    }
+
+
+    &__social img {
+        margin-left: 25px;
+    }
+}

@@ -4,11 +4,7 @@
 @import "reset";
 @import "container";
 @import "components/button";
-// layout
-@import "../scss/layout/header";
-@import "../scss/layout/about";
-@import "../scss/layout/work";
-@import "../scss/layout/cards";
+
 
 // default style reset
 
@@ -47,6 +43,14 @@ img {
 @import "../scss/layout/header";
 @import "../scss/layout/projects";
 @import "../scss/layout/skills";
+
+// layout
+@import "../scss/layout/header";
+@import "../scss/layout/about";
+@import "../scss/layout/work";
+@import "../scss/layout/cards";
+@import "../scss/layout/webdeveloper";
+@import "../scss/layout/footer";
 
 @import "components/menu";
 

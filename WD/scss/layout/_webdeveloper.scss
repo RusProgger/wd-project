@@ -1,0 +1,48 @@
+.main__web-developer {
+
+    &-body {
+        max-width: 475px;
+        margin: auto;
+        padding: 120px 10px 70px 10px;
+    }
+
+    &-title {
+        @include nameText;
+        text-align: center;
+        font-size: clamp(1rem, -0.4545rem + 7.2727vw, 2rem);
+        margin-bottom: 40px;
+    }
+
+    &-desc {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1rem;
+        @include nameTextDesc;
+    }
+
+    &-form {
+        padding: 60px 0;
+        & input {
+            padding: 12px 10px;
+            @include nameTextDesc;
+            margin-bottom: 25px;
+            border: none;
+        }
+
+        textarea {
+            width: 442px;
+            height: 175px;
+            resize: none;
+            padding: 12px;
+            @include nameTextDesc;
+            border: none;
+        }
+    }
+
+    &-button {
+        width: 190px;
+        display: block;
+        margin: 30px auto;
+    }
+}
+

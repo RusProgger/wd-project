@@ -1,33 +1,62 @@
 .main__cards {
-    &-body {
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 72px;
-
-
-        // images blocks 
-
-        &-img {
-            width: calc(100% / 4);
-            font-size: 0;
-        }
-    }
-
-    // microsoft  icon
-
-    &-microsoft {
-        padding-bottom: 100px;
-        margin: auto;
-        width: 100%;
-        
-        & {
-            a:not(:first-child) {
-                margin-left: 20px;
-            }
-        }
-
-        
-        
-    }
-
+    padding-bottom: 100px;
 }
+
+.main__cards-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 72px;
+
+    // images
+
+    &-img {
+        width: calc(100% / 4);
+        height: auto;
+        display: block;
+        position: relative;
+        font-size: 0;
+        cursor: pointer;
+        
+
+        // overlay 
+
+        &-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+            background-color: #34547A;
+
+            // overlay link
+
+            & > .overlay-link {
+                color: white;
+                font-size: 100px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+        }
+
+        &:hover > &-overlay {
+            opacity: 0.8;
+        }
+    }
+}
+
+.main__cards-microsoft {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 120px;
+    align-items: center;
+    justify-content: space-between;
+} 
