@@ -1,0 +1,36 @@
+@import "normalize";
+@import "reset";
+@import "var";
+
+// standart styles
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-size: 1rem;
+    font-family: 'CaviarDreams', sans-serif;
+    text-rendering: optimizeSpeed;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+// components 
+
+@import "components/container";
+@import "components/header";
+@import "components/menu";
+@import "components/page";
+
+
