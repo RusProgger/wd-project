@@ -375,6 +375,14 @@ html {
   margin: 0;
 }
 
+img {
+  font-size: 0;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 body {
   font-size: 1rem;
   font-family: "CaviarDreams", sans-serif;
@@ -406,7 +414,7 @@ body {
   min-height: 90px;
 }
 .header-background {
-  background-color: rgba(24, 23, 23, 0.897);
+  background-color: rgba(24, 23, 23, 0.945);
 }
 .header__wrapper {
   min-height: inherit;
@@ -501,4 +509,114 @@ body {
 }
 .menu__toggle:checked ~ .menu__box {
   left: 0 !important;
+}
+
+.page {
+  background: #C33764; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  min-height: 100vh;
+}
+.page__text {
+  max-width: 600px;
+}
+.page__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: inherit;
+  padding: 5rem 1.2rem 2rem 1.2rem;
+  text-align: center;
+}
+.page__title {
+  text-transform: uppercase;
+  font-size: clamp(1.875rem, 1.4354rem + 2.1978vw, 2.525rem);
+  font-family: "CaviarDreamsBold";
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.page__desc {
+  font-family: "CaviarDreamsItalic";
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.page__logo img {
+  display: block;
+  max-width: 700px;
+}
+.page__button-link {
+  text-decoration: none;
+  color: #e2e2e2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  max-width: 250px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  background: #cc2b5e; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.page__button-link:hover {
+  background: #DC2424; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.services {
+  background: #780206; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+}
+.services__title {
+  padding-bottom: 5rem;
+}
+.services__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.services__card {
+  max-width: calc(33.3333333333% - 20px);
+  padding: 80px;
+  flex-grow: 1;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+}
+.services__card:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+.services__card-img {
+  display: block;
+  margin: auto;
+}
+.services__card-text {
+  padding-top: 30px;
+  font-size: 1.2rem;
+  line-height: 2;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.main__services {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.title {
+  color: #ffffff;
+  text-align: center;
+  font-size: clamp(1.75rem, 1.3104rem + 2.1978vw, 3rem);
+  font-family: "CaviarDreamsBold";
+  font-weight: bold;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=main.css.map */

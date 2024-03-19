@@ -1,0 +1,18 @@
+@mixin buttonLink {
+    text-decoration: none;
+    color: $LinkColorText;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@mixin paddingLine {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@mixin title {
+    font-size: clamp(1.75rem, 1.3104rem + 2.1978vw, 3rem);
+    font-family: 'CaviarDreamsBold';
+    font-weight: bold;
+}

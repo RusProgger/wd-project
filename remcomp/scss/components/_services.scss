@@ -1,0 +1,59 @@
+.services {
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+
+    &__title {
+        padding-bottom: 5rem;
+    }
+
+    // card block
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__card {
+        max-width: calc((100% / 3) - 20px);
+        padding: 80px;
+        flex-grow: 1;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        &-img {
+            display: block;
+            margin: auto;
+        }
+
+        &-text {
+            padding-top: 30px;
+            font-size: 1.2rem;
+            line-height: 2;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+    }
+}
+
+.main__services {
+    @include paddingLine;
+}
+
+.title {
+    color: $textColor;
+    text-align: center;
+    @include title;
+    letter-spacing: 2px;
+}

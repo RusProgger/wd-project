@@ -1,0 +1,61 @@
+.page {
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    min-height: 100vh;
+
+    &__text {
+        max-width: 600px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        min-height: inherit;
+        padding: 5rem 1.2rem 2rem 1.2rem;
+        text-align: center;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: clamp(1.875rem, 1.4354rem + 2.1978vw, 2.525rem);
+        font-family: 'CaviarDreamsBold';
+        letter-spacing: 1.5px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+
+    &__desc {
+        font-family: 'CaviarDreamsItalic';
+        font-size: 1.3rem;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    &__logo img {
+        display: block;
+        max-width: 700px;
+    }
+
+    &__button-link {
+        @include buttonLink;
+        max-width: 250px;
+        display: block;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: 0.3s;
+        background: #cc2b5e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        &:hover {
+            background: #DC2424;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    }
+}
